@@ -1,0 +1,54 @@
+# Git ignore for .NET / Visual Studio projects
+
+# Visual Studio temporary files, build results, and
+# user-specific files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build output
+[Bb]in/
+[Oo]bj/
+out/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Rider
+.idea/
+
+# NuGet
+*.nupkg
+packages/
+.nuget/
+
+# Publish output
+publish/
+
+# Test results
+TestResults/
+*.trx
+
+# Generated files
+*.g.cs
+*.Generated.cs
+*.g.i.cs
+
+# Resharper
+_ReSharper*/
+*.ReSharper
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Others
+*.vsix
+
+# End of file
