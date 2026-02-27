@@ -1,11 +1,11 @@
-# Mandelbrot
+# MandelbrotViewer
 
-Simple C# console app that renders an ASCII Mandelbrot set.
+Simple C# Windows Forms app that renders a Mandelbrot set.
 
 ## Build & Run
 
 ```powershell
 cd C:\Projects\Mandelbrot
 dotnet build
-dotnet run --project C:\Projects\Mandelbrot\Mandelbrot.csproj
+dotnet run --project C:\Projects\Mandelbrot\MandelbrotViewer.csproj
 ```

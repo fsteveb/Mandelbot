@@ -1,12 +1,15 @@
 using System;
 using System.Windows.Forms;
 
-static class Program
+namespace MandelbrotViewer
 {
-    [STAThread]
-    static void Main()
+    static class Program
     {
-        ApplicationConfiguration.Initialize();
-        Application.Run(new Form1());
+        [STAThread]
+        static void Main()
+        {
+            ApplicationConfiguration.Initialize();
+            Application.Run(new Form1());
+        }
     }
 }

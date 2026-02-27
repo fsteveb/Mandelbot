@@ -2,19 +2,21 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-public class Form1 : Form
+namespace MandelbrotViewer
 {
-    private Bitmap? _bitmap;
-    private const int maxIter = 1000;
-
-    public Form1()
+    public class Form1 : Form
     {
-        Text = "Mandelbrot Explorer";
-        ClientSize = new Size(800, 600);
-        DoubleBuffered = true;
-        Resize += (s, e) => { GenerateBitmap(); Invalidate(); };
-        GenerateBitmap();
-    }
+        private Bitmap? _bitmap;
+        private const int maxIter = 1000;
+
+        public Form1()
+        {
+            Text = "Mandelbrot Viewer";
+            ClientSize = new Size(800, 600);
+            DoubleBuffered = true;
+            Resize += (s, e) => { GenerateBitmap(); Invalidate(); };
+            GenerateBitmap();
+        }
 
     private void GenerateBitmap()
     {
@@ -60,4 +62,5 @@ public class Form1 : Form
             e.Graphics.DrawImage(_bitmap, Point.Empty);
         }
     }
+}
 }
